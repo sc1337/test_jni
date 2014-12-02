@@ -1,0 +1,27 @@
+apply plugin: 'android'
+
+android {
+  compileSdkVersion 19
+  buildToolsVersion "21.1.1"
+
+  defaultConfig {
+    minSdkVersion 9
+    targetSdkVersion 19
+    versionCode 1
+    versionName "1.0"
+
+    ndk {
+      moduleName "streamer"
+      ldLibs "log"
+    }
+  }
+
+}
+
+dependencies {
+  androidTestCompile 'org.robolectric:robolectric:2.2'
+
+}
+
+
+
